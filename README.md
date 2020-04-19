@@ -16,8 +16,11 @@ Here's a script that does just that.
 
 ## Usage
 
-- Install Node (I developed this on node 12)
-- Check out this repo
+- Install Node (I developed this on node 12 via nvm)
+- Clone this repo
+- `cd` into this repo
 - `npm install`
-- TODO: Add directions on adding your API Token
-- `npm start`
+- Get a Spotify token
+  - It's easy to get one from Spotify's web console by going to https://developer.spotify.com/console/get-current-user-saved-tracks/ , logging into Spotify, clicking "Get Token", selecting `user-library-read` and `user-library-modify`, then clicking "Request token". Copy the "OAuth Token".
+- `npm start  -- --token="<YOUR SPOTIFY TOKEN HERE>"`
+- Done!

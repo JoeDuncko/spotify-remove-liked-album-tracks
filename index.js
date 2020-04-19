@@ -1,8 +1,15 @@
 const fetch = require('node-fetch');
 const chunks = require('array.chunk');
+const argv = require('yargs').argv
 
-const token = "BQAN1JGZ7VgFGyZkXToVRDLItqRSh_Tx7tGcJxISBeAjdlZUdiEkQrqhTN01vM6kGN7ZUQXAJysuJyw9jQGJccipAh6ntJ6f7Achf2lhV2C8BJ6YA5PKX0unHVhxa-_JHg0qd36zlGkrghNXELub2ma3zPaj6yMJ7g6rIw75xYKrD3j0PLXe_t9eTg-QIen_yls"
-const bearer = 'Bearer ' + token;
+console.log(argv.token);
+
+if (!argv.token){
+    console.log("No token passed! Aborting! Read the docs!");
+    return;
+}
+
+const bearer = 'Bearer ' + argv.token;
 
 async function deleteTrack(itemIds) {
     try {

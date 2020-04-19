@@ -19,6 +19,7 @@
   "homepage": "https://github.com/JoeDuncko/spotify-remove-liked-albums-songs#readme",
   "dependencies": {
     "array.chunk": "1.1.0",
-    "node-fetch": "2.6.0"
+    "node-fetch": "2.6.0",
+    "yargs": "15.3.1"
   }
 }
