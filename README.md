@@ -1,4 +1,4 @@
-# spotify-remove-liked-albums-songs
+# spotify-remove-liked-album-tracks
 
 ## Reasoning
 
