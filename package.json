@@ -1,11 +1,12 @@
 {
   "name": "spotify-remove-liked-albums-songs",
-  "version": "1.0.0",
   "description": "If an entire saved album's individual songs are saved, remove all those songs",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node ./index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,9 @@
   },
   "homepage": "https://github.com/JoeDuncko/spotify-remove-liked-albums-songs#readme",
   "dependencies": {
-    "array.chunk": "1.1.0",
-    "node-fetch": "2.6.0",
-    "yargs": "15.3.1"
+    "next": "9.3.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "array.chunk": "1.1.0"
   }
 }
